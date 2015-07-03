@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   get 'welcome/home'
 
   get 'welcome/index'
@@ -7,9 +8,12 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  resources :items, only: [:create]
 
-  resources :users, only: [:show]
+  resources :users, only: [:show] do 
+    resources :items, only: [:create]
+  end
+
+
 
   
   # The priority is based upon order of creation: first created -> highest priority.
