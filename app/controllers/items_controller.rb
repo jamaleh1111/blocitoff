@@ -1,7 +1,11 @@
 class ItemsController < ApplicationController
   def create
+    @user = User.find(params[:user_id])
+    @item = @user.items
     @item = Item.new(params.require(:item).permit(:description))
-    @item.current_user = @item
+    # @item.user = current_user
+    # @item.user = @user
+    
 
     if @item.save 
       flash[:notice] = "Item was saved"

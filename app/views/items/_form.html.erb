@@ -1,7 +1,7 @@
-<%= form_for [@user, @user.items.new], remote: true do |f| %>
+<%= form_for ([@user, @user.items.new]) do |f| %>
   <div class="form-group">
-    <%= f.label :placeholder, 'Add an item' %>
-    <%= f.text_area :body, rows: 8, class: 'form-control'  %>
-    <%= f.submit "Add Item", class: 'btn btn-success btn-sm' %>
+    <%= f.label :name, placeholder: 'Add an item' %>
+    <%= f.text_area :name, rows: 2, class: 'form-control'  %>
+    <%= f.submit 'Add Item', class: 'btn btn-success btn-sm' %>
   </div>
 <% end %>

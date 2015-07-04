@@ -1,0 +1,12 @@
+<%= render @user.items %>
+<%= render 'items/form' %>
+
+<p>
+  <strong>Items:</strong>
+  <% @items.each do |item| %>
+  <% end %>
+</p>
+
+<%= render 'items/item' %>
+
+<%= link_to 'Back', @users %>
