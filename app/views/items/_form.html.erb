@@ -1,10 +1,7 @@
-<%= form_for ([@user, @user.items.new]) do |f| %>
+<%= form_for [@user, @user.items.new] do |f| %>
   <div class="form-group">
     <%= f.label :name, placeholder: 'Add an item' %>
     <%= f.text_area :name, rows: 2, class: 'form-control'  %>
     <%= f.submit 'Add Item', class: 'btn btn-success btn-sm' %>
   </div>
-  <strong>Items</strong>
-  <div class="form-group">
-    <%= f.text_area :item %>
 <% end %>
