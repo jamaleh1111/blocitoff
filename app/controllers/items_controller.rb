@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
   def create
     @user = User.find(params[:user_id])
     @item = @user.items
-    @item = Item.new(params.require(:item).permit(:description))
+    @item = current_user.items.build(item_params)
     # @item.user = current_user
     # @item.user = @user
     
@@ -15,4 +15,8 @@ class ItemsController < ApplicationController
       redirect_to user_path(current_user)
     end
   end
+
+  def item_params
+    params.require(:item).permit(:name)
+  end 
 end
