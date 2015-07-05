@@ -4,3 +4,4 @@
 
 <%= render partial: 'items/item', collection: @items %>
 
+  <div class='js-items-count'><%= pluralize(@user.items.count, 'item') %></div>
