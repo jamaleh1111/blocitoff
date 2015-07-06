@@ -21,10 +21,16 @@
 }
 
 .jumbotron {
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 45px;
+  margin-left: 125px;
+  margin-right: 125px;
   font-size: 21px;
   font-weight: 200;
-  background-color: #B7CCF2
+  background-color: #B7CCF2;
+  text-align: center;
+  max-width: 500px;
 }
 
+#home {
+  align-content: center;
+}
