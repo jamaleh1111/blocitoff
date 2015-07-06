@@ -4,7 +4,8 @@
       <div class="table-responsive">
         <table class="table table-bordered">
           <ol 
-            <li><%= item.name %></li> <%= link_to "Complete", item.name, method: :delete, class: 'glyphicon glyphicon-ok', remote: true %>
+            <li><%= item.name %></li>
+            <%= link_to "", user_item_path(@user.id, item.id), method: :delete, class: 'glyphicon glyphicon-ok', remote: true %>
           </ol>
         </table>
       </div>

@@ -1,4 +1,7 @@
 class ItemsController < ApplicationController
+
+
+
   def create
     @user = User.find(params[:user_id])
     @item = @user.items
@@ -18,21 +21,19 @@ class ItemsController < ApplicationController
 
   def destroy
     @user = User.find(params[:user_id])
-    @item = @user.items.find(params[:id])
+    @item = Item.find(params[:id])
 
     if @item.destroy
       flash[:notice] = "Item is completed!"
-      redirect_to @user
     else
       flash[:error] = "Sorry, there was a problem, please try again."
-      redirect_to @user
     end 
   end 
 
-    # resond_to do |format|
-    #   format.html
-    #   format.js
-    # end 
+    respond_to do |format|
+      format.html
+      format.js
+    end 
 
 
   def item_params
