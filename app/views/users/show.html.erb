@@ -1,7 +1,14 @@
-<%= render 'items/form' %>
-
+<html>
+<body>
+  
+<% if @user.present? %> 
+<%= pluralize(@user.items.count, 'item') %>
+<% end %>
 
 
 <%= render partial: 'items/item', collection: @items %>
 
-  <div class='js-items-count'><%= pluralize(@user.items.count, 'item') %></div>
+<%= render 'items/form' %>
+ 
+</body>
+</html>
