@@ -1,16 +1,13 @@
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <div class="table-responsive">
-          <table class="table table-bordered">
-              <ol 
-                <li><%= item.name %></li>
-              </ol>
-            
-             
-            <%= link_to "Delete", item.name, method: :delete, class: 'glyphicon glyphicon-ok', remote: true %>
-          </table>
-        </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <ol 
+            <li><%= item.name %></li> <%= link_to "Complete", item.name, method: :delete, class: 'glyphicon glyphicon-ok', remote: true %>
+          </ol>
+        </table>
       </div>
     </div>
-  </div>  
+  </div>
+</div>  
