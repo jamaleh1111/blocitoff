@@ -1,6 +1,6 @@
-Class ItemPolicy < ApplicationPolicy
+# Class ItemPolicy < ApplicationPolicy
   
-  def destroy?
-    user.present?
-  end 
-end 
+#   def destroy?
+#     current_user.present?
+#   end 
+# end 
