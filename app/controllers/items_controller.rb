@@ -36,7 +36,7 @@ class ItemsController < ApplicationController
     @item = current_user.items.find(params[:id])
 
     if @item.destroy
-      flash[:notice] = "Item is completed!"
+      flash[:notice] = "Item was deleted."
       redirect_to current_user
     else
       flash[:error] = "Sorry, there was a problem, please try again."
