@@ -21,10 +21,26 @@
 }
 
 .jumbotron {
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 45px;
   font-size: 21px;
   font-weight: 200;
-  background-color: #B7CCF2
+  background-color: #f1e8ca;
+  text-align: center;
+  max-width: 500px;
+  align: center;
 }
 
+
+body {
+  font-family: 'Bree Serif', serif;
+  background-color: #dd855c;
+}
+
+header {
+  background-color: #9ebd9e;
+}
+
+table { 
+  background-color: #f1e8ca;
+  color: #745151;
+}
