@@ -3,9 +3,9 @@
     <div class="col-md-6 col-md-offset-3">
       <div class="table-responsive">
         <table class="table table-bordered">
-          <ol 
+          <ol> 
             <li><%= item.name %></li>
-            <%= link_to "", user_item_path(@user.id, item.id), method: :delete,  class: 'glyphicon glyphicon-ok', remote: true %>
+            <%= link_to "", user_item_path(@user.id, item.id), method: :delete,  class: 'glyphicon glyphicon-ok' %>
           </ol>
         </table>
       </div>
