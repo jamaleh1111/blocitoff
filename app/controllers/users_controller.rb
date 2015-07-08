@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
-    @items = @user.todos
+    @items = @user.items.where(completed: nil)
   end
 
   def update

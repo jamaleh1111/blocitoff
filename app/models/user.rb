@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
     items.where(completed: nil).count
   end
 
-  def todos
-    items.where(completed: nil)
-  end
+  # def todos
+  #   items.where(completed: nil)
+  # end
 end
