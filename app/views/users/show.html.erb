@@ -1,32 +1,20 @@
-<% if @user.present? %> 
-  <div class='js-items-count'> You have <%= pluralize(@user.num_of_todos, 'item') %> to complete </div>
+    <div class='js-items-count'> You have <%= pluralize(@user.num_of_todos, 'item') %> to complete </div>
+
+    <div class="container">
+  <div class="row">
     <div class="col-md-6 col-md-offset-3">
-      <div class="table-responsive">
-        <table class="table table-bordered">
-          <div class='js-items'>
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th>Days Left</th>
-                <th>Delete</th>
-                <th>Complete?</th>
-              </tr>
-            </thead>
-              <tbody>            
-                <%= render partial: 'items/item', collection: @items %>          
-              </tbody>
-            </div>
-          </table>
-        </div>
-      </div>
+      
+         
+  <div class='js-items'>
+    <ol>
+    <%= render partial: 'items/item', collection: @items %>
+    </ol>
+        
     </div>
-  <div class="col-md-6 col-md-offset-3">
-    <form class="pull-left form-inline">
-      <div class="form-group">
-        <div class="new-item">
-          <%= render 'items/form' %>
-        </div>
-      </div>
-    </form>
+  </div>
+</div>  
+  </div>
+  <div class="new-item">
+    <%= render 'items/form' %>
   </div>
 <% end %>
