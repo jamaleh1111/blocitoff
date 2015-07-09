@@ -3,10 +3,21 @@
   
 <% if @user.present? %> 
 <% end %>
-  <div class='js-items-count'><%= pluralize(@user.num_of_todos, 'item') %></div>
-    <h2>Things I need to do</h2>
+    <div class='js-items-count'> You have <%= pluralize(@user.num_of_todos, 'item') %> to complete </div>
+
+    <div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      
+         
   <div class='js-items'>
+    <ol>
     <%= render partial: 'items/item', collection: @items %>
+    </ol>
+        
+    </div>
+  </div>
+</div>  
   </div>
   <div class="new-item">
     <%= render 'items/form' %>
