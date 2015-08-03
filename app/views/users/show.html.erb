@@ -1,8 +1,9 @@
 <% if @user.present? %> 
   <div class='js-items-count'> You have <%= pluralize(@user.num_of_todos, 'item') %> to complete </div>
     <div class="col-md-6 col-md-offset-3">
-      <div class="table-responsive">
-        <table class="table table-bordered">
+      <div class='js-items'>
+        <div class="table-responsive">
+          <table class="table table-bordered">
             <thead>
               <tr>
                 <th>Item</th>
@@ -16,7 +17,8 @@
                   <%= render partial: 'items/item', collection: @items %> 
                 </tr>       
               </tbody>
-          </table>
+            </table>
+          </div>
         </div>
       </div>
     </div>
