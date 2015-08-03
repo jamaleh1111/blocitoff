@@ -40,6 +40,12 @@ body {
   text-align: center;
 }
 
+.image {
+  background: image-url('checklist2.jpg') left no-repeat;
+  max-width: 200px;
+  max-height: 400px;
+}
+
 .js-items-count {
   font-size: 2.25em;
   padding-top: 20px;
