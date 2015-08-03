@@ -3,7 +3,6 @@
     <div class="col-md-6 col-md-offset-3">
       <div class="table-responsive">
         <table class="table table-bordered">
-          <div class='js-items'>
             <thead>
               <tr>
                 <th>Item</th>
@@ -12,10 +11,11 @@
                 <th>Complete?</th>
               </tr>
             </thead>
-              <tbody>            
-                <%= render partial: 'items/item', collection: @items %>          
+              <tbody>   
+                <tr>         
+                  <%= render partial: 'items/item', collection: @items %> 
+                </tr>       
               </tbody>
-            </div>
           </table>
         </div>
       </div>
