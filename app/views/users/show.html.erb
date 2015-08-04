@@ -3,13 +3,27 @@
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
       <div class='js-items'>
-        <ol>
-        <%= render partial: 'items/item', collection: @items %>
-        </ol>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Days Left</th>
+                <th>Delete</th>
+                <th>Complete?</th>
+              </tr>
+            </thead>
+              <tbody>   
+                <tr>         
+                  <%= render partial: 'items/item', collection: @items %> 
+                </tr>       
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </div>  
-</div>
 <div class="new-item">
   <div class="col-md-4 col-md-offset-3">
     <div class="form-group">

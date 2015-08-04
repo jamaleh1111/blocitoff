@@ -5,4 +5,6 @@ class Item < ActiveRecord::Base
 
   default_scope { order('updated_at ASC') }
 
+  
+
 end

@@ -19,9 +19,20 @@
 .user-info {
   margin-top: 9px;
 }
-
+header {
+  background-color: #9ebd9e;
+  padding-bottom: 9px;
+}
+header div a {
+  margin: .05%;
+}
+body {
+  font-family: 'Bree Serif', serif;
+  background-color: #dd855c;
+  text-align: center;
+}
 .jumbotron {
-  margin-top: 45px;
+  margin: 45px auto 0 auto;
   font-size: 21px;
   font-weight: 200;
   background-color: #f1e8ca;
@@ -31,13 +42,6 @@
 
 p a {
   margin: .15%;
-}
-
-
-body {
-  font-family: 'Bree Serif', serif;
-  background-color: #dd855c;
-  text-align: center;
 }
 
 .image {
@@ -52,10 +56,7 @@ body {
   padding-bottom: 20px;
 }
 
-header {
-  background-color: #9ebd9e;
-  padding-bottom: 9px;
-}
+
 
 table { 
   background-color: #f1e8ca;
@@ -75,6 +76,3 @@ button {
   margin-left: 30px;
 }
 
-header div a {
-  margin: .05%;
-}
