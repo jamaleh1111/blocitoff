@@ -45,9 +45,8 @@ p a {
 }
 
 .image {
-  background: image-url('checklist2.jpg') left no-repeat;
-  max-width: 200px;
-  max-height: 400px;
+  background: image-url('checklist2.jpg') no-repeat;
+  float: left;
 }
 
 .js-items-count {
