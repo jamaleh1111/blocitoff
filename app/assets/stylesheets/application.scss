@@ -19,35 +19,38 @@
 .user-info {
   margin-top: 9px;
 }
+
 header {
   background-color: #9ebd9e;
   padding-bottom: 9px;
 }
-header div a {
-  margin: .05%;
-}
+
 body {
   font-family: 'Bree Serif', serif;
   background-color: #dd855c;
   text-align: center;
+  background-image: image-url('checklist1.png');
+  background-repeat: repeat;
+  background-size: 10%;
 }
+
+header div a {
+  margin: .05%;
+}
+
 .jumbotron {
-  margin: 45px auto 0 auto;
   font-size: 21px;
   font-weight: 200;
   background-color: #f1e8ca;
   text-align: center;
-  max-width: 500px;
+
 }
 
 p a {
   margin: .15%;
 }
 
-.image {
-  background: image-url('checklist2.jpg') no-repeat;
-  float: left;
-}
+
 
 .js-items-count {
   font-size: 2.25em;
@@ -71,7 +74,9 @@ a {
   margin-right: 30px;
 }
 
-button {
-  margin-left: 30px;
+#buttons a {
+  margin: 0 auto 0 auto;
 }
+
+
 
