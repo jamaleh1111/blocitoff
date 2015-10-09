@@ -3,7 +3,7 @@
   <head>
     <title>Blocitoff</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
@@ -12,9 +12,7 @@
     <div class="container">
       <div class="pull-right user-info">
         <% if current_user %>
-          Hello <%= link_to (current_user.name || current_user.email), user_path(current_user)  %>! 
-          <br>
-          <%= link_to "Home", root_path %> ||  
+          Hello <%= link_to (current_user.name || current_user.email), user_path(current_user)  %>!  
           <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
         <% else %>
           <%= link_to "Sign In", new_user_session_path %> || 
