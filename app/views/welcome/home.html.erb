@@ -1,20 +1,8 @@
-<html>
-<body>
-
-
-      <div class="jumbotron">
-        <div class="container">
-
-          <h1>Blocitoff</h1>
-          <p>A self-destruction to-do list to keep you focused on the things that really matter.</p>
-            <p>
-              <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or
-              <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> today!
-            </p>
-        </p>
-        </div>
-      </div>
-    
-  
-</body>
-</html>
+<div class="jumbotron">
+  <div class="container">
+    <h1>Blocitoff</h1>
+      <p>A self-destructing to-do list to keep you focused on the things that really matter.</p>
+      <p><%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or
+          <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> today!</p>
+  </div>
+</div>
