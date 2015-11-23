@@ -1,8 +1,7 @@
 <tr id="buttons">
-  <td><%= item.name %></td> 
+  <td><%= item.name %></td>
   <td><%= distance_of_time_in_words_to_now(item.expires_at) %></td>
-  <td><%= link_to "", user_item_path(current_user, item), method: :delete,  class: 'glyphicon glyphicon-trash' %></td> 
-  <td><%= link_to user_item_complete_path(current_user, item), method: :put do %><button type"button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-check"></span></td>
+  <td><%= link_to "", user_item_path(current_user, item), method: :delete,  class: 'glyphicon glyphicon-trash' %></td>
+  <td><%= link_to user_item_complete_path(current_user, item), method: :put do %><span class="glyphicon glyphicon-check"></span></td>
   <% end %>
 </tr>
- 

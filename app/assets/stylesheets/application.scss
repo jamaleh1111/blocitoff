@@ -39,10 +39,15 @@ header div a {
   margin: .05%;
 }
 
-div#id {
-
+div.pull-right.user-info {
+  a {
+    text-decoration: none;
+    color: #745151;
+    &:hover {
+      color: #f1e8ca;
+    }
+  }
 }
-
 div.well {
   margin: 80px;
   border: 10px;
@@ -73,7 +78,7 @@ p a {
 }
 
 
-table { 
+table {
   background-color: #f1e8ca;
   color: #745151;
 }
@@ -93,11 +98,29 @@ a {
 
 #buttons a {
   margin: 0 auto 0 auto;
+  color: rgb(213,64,37);
 }
+
+span.glyphicon.glyphicon-check {
+  color: rgb(213,64,37);
+}
+
 
 .form-control {
   background-color: #f1e8ca;
 }
 
+input.btn.btn-success, input.btn.btn-danger {
+  border: 1px solid rgb(213,64,37);
+  background-color: transparent;
+  color: #745151;
+}
 
-
+div.form-group a {
+  text-decoration: none;
+  margin: 0;
+  color: #745151;
+  &:hover {
+    color: #f1e8ca;
+  }
+}
