@@ -1,4 +1,3 @@
-
 <%= form_for [@user, @user.items.new] do |f| %>
   <%= f.text_field :name, class: 'form-control', placeholder: 'Add an item' %>
   <%= f.submit 'Do it!', class: 'btn btn-success btn-sm' %>
